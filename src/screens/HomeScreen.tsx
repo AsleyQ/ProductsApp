@@ -20,6 +20,7 @@ export default function HomeScreen() {
         };
         fetchProduct();
     }, []);
+    
 
     //De esta manera se filtran los productos por medio de la búsqueda (ToLowerCase para evitar problemas con mayúsculas y minúsculas)
     const filteredProducts = products.filter((item) =>{
@@ -30,7 +31,6 @@ export default function HomeScreen() {
         <ScrollView style={global.container}>
           <Text style={global.title}>Productos</Text>
     
-          {/* Este es el input donde el usuario busca los productos por medio del title ste*/}
           <View style={global.searchContainer}>
             <TextInput
               style={global.searchInput}
@@ -40,7 +40,6 @@ export default function HomeScreen() {
             />
           </View>
     
-          {/* Mostrar productos filtrados */}
           {filteredProducts.length > 0 ? (
             filteredProducts.map((item) => (
               <BeautyProducts key={item.id} product={item} />

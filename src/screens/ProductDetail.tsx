@@ -12,7 +12,6 @@ const ProductDetail = ({ route,navigation }: { route: any, navigation: any }) =>
                 <Image source={{ uri: product?.thumbnail }} style={styles.image} />
                 <Text style={styles.name}>{product?.title}</Text>
                 <Text style={styles.DetailsText}>{product?.description}</Text>
-                {/* <Text style={styles.DetailsText}>Marca: {product?.brand}</Text> */}
                 <Text style={styles.price}>${product?.price}</Text>
             </View>
         </View>
@@ -54,15 +53,17 @@ const styles = StyleSheet.create({
       fontWeight: 'bold',
       marginBottom: 10,
       textAlign: 'center',
-      color: '#34495e'
+      color: '#084c91'
     },
     DetailsText: {
       alignItems: 'center',
+      fontSize: 25,
+      
     },
     price: {
       fontSize: 25,
       fontWeight: 'bold', //Letra en negrita
-      color: '#27700e', 
+      color: '#190b83', 
       marginTop: 10, //Separar un poco el precio de las letras
       left:'70%'
     },

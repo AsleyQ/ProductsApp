@@ -21,7 +21,7 @@ const SplashScreen = ({navigation}:any) => {
 
   return (
     <View style={styles.container}>
-        <ActivityIndicator size="large" color="#fff" /> {/*Indicador de carga*/}
+        <ActivityIndicator size="large" color="#fff" /> 
     </View>
   )
 }

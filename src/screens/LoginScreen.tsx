@@ -56,10 +56,8 @@ const LoginScreen = ({ navigation }: any) => {
                 secureTextEntry
             />
 
-            {/* Botón de iniciar sesión */}
             <Button title= "Ingresar" onPress={handleLogin} color="#217ddf" />
 
-            {/* Texto para redirigir a la pantalla de registro */}
             <TouchableOpacity onPress={() => navigation.navigate('Register')}>
                 <Text style={styles.registerText}>¿No tienes cuenta? Regístrate aquí</Text>
             </TouchableOpacity>

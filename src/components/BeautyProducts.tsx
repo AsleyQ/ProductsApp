@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     price: {
       fontSize: 18,
       fontWeight: '600',
-      color: '#FFA500',
+      color: '#1f108e',
       left:250
     },
   });

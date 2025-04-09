@@ -59,7 +59,6 @@ const PrincipalScreen = ({navigation}: {navigation: any}) => {
           >
             <Text style={styles.title}>Bienvenid@ {user}</Text>
             <Button title="Ver productos" onPress={() => navigation.navigate('HomeScreen')} color="#218cde" />
-            {/* <Button title="Cerrar Sesión" onPress={cerrarSesion} color="#FF0000" /> */}
           </LinearGradient>
         </ImageBackground>
       );

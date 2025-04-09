@@ -56,7 +56,6 @@ const RegisterScreen = ({navigation}:any) => {
             onChangeText={setPass}>
         </TextInput>
 
-        {/* Botón de registro */}
         <Button title="Guardar" onPress={handleRegister} color="#2157df" />
 
    </View>
