@@ -13,13 +13,13 @@ const BeautyProducts = ({product}:{product: Product}) => {
     <TouchableOpacity onPress={handlePress} style={styles.card}>
         
         <Image
-            source={{uri: product.thumbnail}}
+            source={{uri: product?.thumbnail}}
             style={styles.image}  resizeMode= "cover"
         />
         <View style={styles.infoContainer}>
-            <Text style={styles.title}>{product.title}</Text>
+            <Text style={styles.title}>{product?.title}</Text>
             {/* <Text style={styles.description} numberOfLines={2}>{product.description}</Text> */}
-            <Text style={styles.price}>${product.price}</Text>
+            <Text style={styles.price}>${product?.price}</Text>
             
         </View>
     </TouchableOpacity>
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
       marginBottom: 8,
     },
     price: {
-      fontSize: 16,
+      fontSize: 18,
       fontWeight: '600',
       color: '#FFA500',
       left:250

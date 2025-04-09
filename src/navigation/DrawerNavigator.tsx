@@ -12,9 +12,9 @@ export default function App(){
     <Drawer.Navigator initialRouteName='PrincipalScreen'>
       <Drawer.Screen name="PrincipalScreen" component={PrincipalScreen} options={{title:"Principal"}}/>
       
-      <Drawer.Screen name="HomeScreen" component={HomeScreen} options={{ title: "Products" }} /> 
+      <Drawer.Screen name="HomeScreen" component={HomeScreen} options={{ title: "Productos" }} /> 
 
-      <Drawer.Screen name="ProductDetail" component={ProductDetail} options={{ title: "Product Details" }} />  
+      <Drawer.Screen name="ProductDetail" component={ProductDetail} options={{ title: "Detalles de Productos" }} />  
     </Drawer.Navigator>
   );
 };

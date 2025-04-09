@@ -9,10 +9,10 @@ const ProductDetail = ({ route,navigation }: { route: any, navigation: any }) =>
     
         <View style={styles.container}>
             <View style={styles.containerDetails}>
-                <Image source={{ uri: product.thumbnail }} style={styles.image} />
-                <Text style={styles.name}>{product.title}</Text>
-                <Text style={styles.DetailsText}>{product.description}</Text>
-                <Text style={styles.price}>${product.price}</Text>
+                <Image source={{ uri: product?.thumbnail }} style={styles.image} />
+                <Text style={styles.name}>{product?.title}</Text>
+                <Text style={styles.DetailsText}>{product?.description}</Text>
+                <Text style={styles.price}>${product?.price}</Text>
             </View>
         </View>
        
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
       paddingHorizontal: 15,
-      backgroundColor:'#db8019',
+      backgroundColor:'#84cedc',
     },
     containerDetails:{
       width: '90%',

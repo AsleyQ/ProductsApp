@@ -36,7 +36,7 @@ const LoginScreen = ({ navigation }: any) => {
 
         <View style={styles.card}>
         <Image style={styles.userImage}
-        source={{ uri: 'https://static.vecteezy.com/system/resources/previews/017/196/586/non_2x/user-icon-on-transparent-background-free-png.png' }}
+        source={{ uri: 'https://cdn-icons-png.flaticon.com/512/6326/6326055.png' }}
         resizeMode="contain"
         />
 
@@ -57,7 +57,7 @@ const LoginScreen = ({ navigation }: any) => {
             />
 
             {/* Botón de iniciar sesión */}
-            <Button title= "Ingresar" onPress={handleLogin} color="#dfa621" />
+            <Button title= "Ingresar" onPress={handleLogin} color="#217ddf" />
 
             {/* Texto para redirigir a la pantalla de registro */}
             <TouchableOpacity onPress={() => navigation.navigate('Register')}>
@@ -121,7 +121,7 @@ const LoginScreen = ({ navigation }: any) => {
         registerText: {
             marginTop: 20,
             textAlign: 'center',
-            color: '#ab3f14',
+            color: '#1474ab',
             textDecorationLine: 'underline'
         },
         userImage: {

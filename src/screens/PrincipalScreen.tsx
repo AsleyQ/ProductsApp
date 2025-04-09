@@ -39,7 +39,7 @@ const PrincipalScreen = ({navigation}: {navigation: any}) => {
                 <FontAwesome 
                     name="sign-out" 
                     size={25} 
-                    color="#ee710b" 
+                    color="#5fafe4" 
                     onPress={cerrarSesion} 
                     style={{ marginRight: 15 }}
                 />
@@ -50,15 +50,15 @@ const PrincipalScreen = ({navigation}: {navigation: any}) => {
 
     return (
         <ImageBackground
-          source={{ uri: 'https://previews.123rf.com/images/artnataliia/artnataliia1601/artnataliia160100031/50241440-sin-patr%C3%B3n-con-productos-de-maquillaje-herramientas-y-accesorios-de-belleza-fondo-de-la-manera.jpg' }}
+          source={{ uri: 'https://st2.depositphotos.com/1521427/7312/v/450/depositphotos_73124485-stock-illustration-decorative-cosmetics-seamless-pattern.jpg' }}
           style={styles.container}
         >
           <LinearGradient
             colors={['rgba(0, 0, 0, 0.6)', 'rgba(0, 0, 0, 0.3)']}
             style={styles.gradient}
           >
-            <Text style={styles.title}>Welcome {user}</Text>
-            <Button title="Go to Products" onPress={() => navigation.navigate('HomeScreen')} color="#389eac" />
+            <Text style={styles.title}>Bienvenid@ {user}</Text>
+            <Button title="Ver productos" onPress={() => navigation.navigate('HomeScreen')} color="#218cde" />
             {/* <Button title="Cerrar Sesión" onPress={cerrarSesion} color="#FF0000" /> */}
           </LinearGradient>
         </ImageBackground>
@@ -82,7 +82,7 @@ const PrincipalScreen = ({navigation}: {navigation: any}) => {
       title: {
         fontSize: 30,
         fontWeight: 'bold',
-        color: '#fff',
+        color: '#ffffff',
       },
       sloganText: {
         fontSize: 20,
