@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { useState } from 'react'
-import { Alert, Button, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Alert, Button, Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 const LoginScreen = ({ navigation }: any) => {
     const [password, setPassword] = useState('');
@@ -32,8 +32,14 @@ const LoginScreen = ({ navigation }: any) => {
         }
     }
     return (
-        <View style={styles.container}>
-           
+    <View style={styles.container}>
+
+        <View style={styles.card}>
+        <Image style={styles.userImage}
+        source={{ uri: 'https://static.vecteezy.com/system/resources/previews/017/196/586/non_2x/user-icon-on-transparent-background-free-png.png' }}
+        resizeMode="contain"
+        />
+
             
             <Text style={styles.title}>Iniciar Sesión</Text>
             <TextInput
@@ -58,6 +64,7 @@ const LoginScreen = ({ navigation }: any) => {
                 <Text style={styles.registerText}>¿No tienes cuenta? Regístrate aquí</Text>
             </TouchableOpacity>
         </View>
+    </View>
 
         )
     }
@@ -66,12 +73,24 @@ const LoginScreen = ({ navigation }: any) => {
     const styles = StyleSheet.create({
         container: {
             flex: 1,
+            backgroundColor: '#dfdccd',
             justifyContent: 'center',
             alignItems: 'center',
-            
+            padding: 16,
+                    
         },
-        container2:{
-            backgroundColor: '#4b453c',
+        card:{
+            width: '100%',
+            maxWidth: 400,
+            backgroundColor: '#fff',
+            borderRadius: 16,
+            padding: 24,
+            shadowColor: '#000',
+            shadowOffset: { width: 0, height: 6 },
+            shadowOpacity: 0.1,
+            shadowRadius: 8,
+            elevation: 6,
+
         },
         title: {
             fontSize: 24,
@@ -81,12 +100,14 @@ const LoginScreen = ({ navigation }: any) => {
 
         },
         input: {
-            width: '80%',
             height: 50,
             borderWidth: 1,
+            borderRadius:10,
             borderColor: '#000',
-            marginBottom: 10,
-            paddingHorizontal: 10,
+            marginBottom: 15,
+            paddingHorizontal: 15,
+            fontSize:16,
+            backgroundColor: '#f9f9f9'
         },
         button: {
             backgroundColor: '#dfa621',
@@ -103,6 +124,13 @@ const LoginScreen = ({ navigation }: any) => {
             color: '#ab3f14',
             textDecorationLine: 'underline'
         },
+        userImage: {
+            width: 300,
+            height: 200,
+            alignSelf: 'center',
+            marginBottom: 20,
+        }
+        
     })
 
     export default LoginScreen;
