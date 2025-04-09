@@ -12,6 +12,7 @@ const ProductDetail = ({ route,navigation }: { route: any, navigation: any }) =>
                 <Image source={{ uri: product?.thumbnail }} style={styles.image} />
                 <Text style={styles.name}>{product?.title}</Text>
                 <Text style={styles.DetailsText}>{product?.description}</Text>
+                {/* <Text style={styles.DetailsText}>Marca: {product?.brand}</Text> */}
                 <Text style={styles.price}>${product?.price}</Text>
             </View>
         </View>

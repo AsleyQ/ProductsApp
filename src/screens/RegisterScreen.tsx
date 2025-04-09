@@ -34,7 +34,7 @@ const RegisterScreen = ({navigation}:any) => {
     }
   return (
    <View style={styles.container}>
-        <Text style={styles.title}>Registrase</Text>
+        <Text style={styles.title}>Registrarse</Text>
         <TextInput
             style={styles.input}
             placeholder="Nombre"
@@ -57,7 +57,7 @@ const RegisterScreen = ({navigation}:any) => {
         </TextInput>
 
         {/* Botón de registro */}
-        <Button title="Guardar" onPress={handleRegister} color="#dfa621" />
+        <Button title="Guardar" onPress={handleRegister} color="#2157df" />
 
    </View>
   )
@@ -72,7 +72,8 @@ const styles= StyleSheet.create({
     title:{
         fontSize: 24,
         fontWeight: 'bold',
-        marginBottom: 16,
+        marginBottom: 19,
+        textAlign: 'center',    
     },
     input:{
         borderWidth: 1,
