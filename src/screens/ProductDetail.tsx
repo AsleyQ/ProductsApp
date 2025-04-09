@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     },
     DetailsText: {
       alignItems: 'center',
-      fontSize: 25,
+      fontSize: 18,
       
     },
     price: {
